@@ -82,7 +82,7 @@ namespace XtraVerticalGridNavigation {
                   try {
                     UpdateHScrollBar();
                     UpdateVScrollBar();                    
-                    ScrollInfo.UpdateScrollerLocation(ScrollRect());
+                    ScrollInfo.UpdateScrollerLocation(ScrollRect(), false, false);
                     mygrid.ViewInfo.ViewRects.ScrollSquare = ScrollSquare;
                     if (mygrid.UseEmbeddedNavigator) {
                         mygrid.EmbeddedNavigator.Height = ScrollInfo.HScrollHeight - 1;
